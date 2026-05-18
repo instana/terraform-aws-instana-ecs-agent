@@ -1,0 +1,28 @@
+[
+  {
+    "name": "aws-sensor",
+    "image": "icr.io/instana/agent",
+    "environment": [
+      {
+        "name": "INSTANA_AGENT_ENDPOINT",
+        "value": "${instana_agent_endpoint}"
+      },
+      {
+        "name": "INSTANA_AGENT_ENDPOINT_PORT",
+        "value": "${instana_agent_endpoint_port}"
+      },
+      {
+        "name": "INSTANA_AGENT_KEY",
+        "value": "${instana_agent_key}"
+      },
+      {
+        "name": "INSTANA_DOWNLOAD_KEY",
+        "value": "${instana_download_key}"
+      },
+      {
+        "name": "INSTANA_AGENT_MODE",
+        "value": "AWS"
+      }
+    ]
+  }
+]
