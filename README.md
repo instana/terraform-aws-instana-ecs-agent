@@ -11,13 +11,23 @@ A Terraform module for deploying the Instana AWS Sensor on AWS ECS Fargate.
 
 ## Prerequisites
 
-Before running this module, ensure the user or IAM role executing Terraform has sufficient AWS permissions to create and manage:
-- ECS clusters
-- ECS services
-- ECS task definitions
-- IAM roles
-- IAM policies
-- Security groups
+### Instana Account
+- Active Instana account with access to:
+  - Agent key (for authentication)
+  - Download key (if different from agent key)
+  - Backend endpoint URL
+
+### AWS Permissions
+
+The IAM user or role executing Terraform must have permissions to create and manage:
+- ECS clusters, services, and task definitions
+- IAM roles and policies
+- Security groups (if creating new ones)
+- VPC resources (read access for existing VPC/subnets)
+
+### Network Requirements
+- VPC with appropriate subnets (public or private with NAT Gateway)
+- Network connectivity to Instana backend endpoint (typically port 443)
 
 ## Usage
 
