@@ -1,0 +1,24 @@
+# ==============================================================================
+# Basic Example - Terraform Variables
+# ==============================================================================
+#
+# Copy this file to terraform.tfvars and update with your actual values.
+#
+# Usage:
+#   cp terraform.tfvars.example terraform.tfvars
+#   # Edit terraform.tfvars with your values
+#   terraform init
+#   terraform apply
+#
+# ==============================================================================
+
+# AWS Region
+region = "us-east-1"
+
+# Network Configuration (Required)
+vpc_id  = "vpc-xxxxxxxxx"
+subnets = ["subnet-xxxxxxxxx", "subnet-yyyyyyyyy"]
+
+# Instana Configuration (Required)
+instana_agent_key = "your-instana-agent-key-here"
+instana_endpoint  = "ingress-blue-saas.instana.io"
