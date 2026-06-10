@@ -1,5 +1,12 @@
 # Changelog
 
+## [v1.0.1](https://github.com/instana/terraform-aws-instana-ecs-agent/tree/v1.0.1)
+
+### Documentation
+- Enhanced README usage section with module example code block
+- Added direct GitHub links to examples directory for easier navigation
+- Improved clarity of getting started instructions
+
 ## [v1.0.0](https://github.com/instana/terraform-aws-instana-ecs-agent/tree/v1.0.0)
 
 ### Added
