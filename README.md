@@ -31,8 +31,16 @@ The IAM user or role executing Terraform must have permissions to create and man
 
 ## Usage
 
-Refer to the `examples` folder for usage examples and sample configurations.
-It includes example Terraform configurations to help you get started with this module.
+```hcl
+module "instana_agent" {
+  source  = "instana/instana-ecs-agent/aws"
+  version = "1.0.0"
+
+  # Provide required and optional variables as needed
+}
+```
+
+For more detailed examples and configurations, refer to the [examples](https://github.com/instana/terraform-aws-instana-ecs-agent/tree/doc-update/examples) folder.
 
 ## Inputs
 
